@@ -1,0 +1,65 @@
+
+
+#social {
+	margin: 15vh auto;
+	max-width: 94%;
+	display: flex;
+
+	article {
+		flex: 4;
+		display: flex;
+		padding: 5px;
+
+		aside {
+			display: inline-block;
+			background: $green;
+			border-radius: 50%;
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			margin-right: .8em;
+			position: relative;
+
+			&:hover {
+				background: $stone;
+			}
+
+			&:before {
+				content: '#';
+				font-family: $brand;
+				text-align: center;
+				width: 100%;
+				line-height: inherit;
+				position: absolute;
+				display: block;
+				top: 0;
+				left: 0;
+				font-size: 1.8em;
+			}
+			&.linkedin:before {
+				content: '\f0e1';
+			}
+			&.twitter:before {
+				content: '\f099';
+			}
+			&.facebook:before {
+				content: '\f39e';
+			}
+			&.instagram:before {
+				content: '\f16d';
+			}
+		}
+
+		header {
+			font-weight: $semibold;
+			font-size: .8em;
+			letter-spacing: .1em;
+			margin-bottom: 1.25em;
+		}
+
+		a {
+			font-size: 1.15em;
+			font-weight: $light;
+		}
+	}
+}

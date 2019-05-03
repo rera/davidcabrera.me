@@ -4,6 +4,7 @@
 @import "hero";
 @import "about";
 @import "teaser";
+@import "social";
 @import "footer";
 
 html, body, #___gatsby, div[role="group"], #page {
@@ -15,6 +16,7 @@ body {
 	margin: 0;
 	background-color: $slate;
 	color: $chalk;
+	font-family: $body;
 
 	#header {
 		display: none;
@@ -23,6 +25,11 @@ body {
 	main {
 		display: block;
 		min-height: 100%;
+
+		a {
+			color: $green;
+			text-decoration: none;
+		}
 	}
 
 	::selection {
