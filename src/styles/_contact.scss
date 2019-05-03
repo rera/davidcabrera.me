@@ -1,0 +1,78 @@
+#contact {
+	border-top: solid 1px transparentize($black, 0.8);
+	padding: 10vh 15vw;
+
+	header {
+		text-align: center;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		font-weight: $semibold;
+		margin: 1em 0 2em;
+	}
+
+	form {
+		label, legend {
+			color: $stone;
+			font-size: .82em;
+			line-height: 1.5em;
+			font-weight: $semibold;
+			display: block;
+		}
+
+		p {
+			box-sizing: border-box;
+			margin: 0;
+			padding-bottom: 1em;
+			width: 50%;
+			display: inline-block;
+
+			&:nth-of-type(odd) {
+				padding-right: .5em;
+			}
+			&:last-of-type {
+				width: 100%;
+				padding-right: 0;
+			}
+
+			input:not([type="submit"]), textarea {
+				font-family: $sans;
+				font-size: 1em;
+				line-height: 2em;
+				box-sizing: border-box;
+				padding: 0 1em;
+				margin: .5em 0 0;
+				width: 100%;
+				background: transparentize($white, 0.9);
+				border: none;
+			}
+		}
+
+		fieldset {
+			border: none;
+			padding: 0;
+			margin: 0;
+			color: $stone;
+
+			legend {
+				padding: 0;
+				line-height: 1em;
+			}
+
+			p {
+				&:last-of-type {
+					width: 50%;
+				}
+				label {
+					font-size: .7em;
+					font-weight: $light;
+				}
+			}
+		}
+
+		input[type="submit"] {
+			width: 70%;
+			margin: auto;
+		}
+	}
+}

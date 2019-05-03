@@ -58,9 +58,9 @@ class Contact extends React.Component {
           </p>
           <p>
             <label for="message">Message</label>
-            <textarea name="message" value={this.state.message} onChange={this.handleInputChange} />
+            <textarea name="message" rows="4" value={this.state.message} onChange={this.handleInputChange} />
           </p>
-          <input type="submit" value={this.props.submitText} onChange={this.handleInputChange} />
+          <input type="submit" className="button green block tall" value={this.props.submitText} onChange={this.handleInputChange} />
         </form>
       </section>
     );
