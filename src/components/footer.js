@@ -4,7 +4,7 @@ class Footer extends React.Component {
   render() {
     return (
 			<footer id="footer">
-				&copy;{(new Date().getFullYear())} {this.props.company}
+				&copy; {(new Date().getFullYear())} {this.props.company}
 			</footer>
 		)
   }
