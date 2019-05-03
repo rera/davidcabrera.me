@@ -1,54 +1,60 @@
+body {
+	perspective: 1px;
+}
 
-	#hero {
-		width: 100%;
-		height: 100%;
-		display: table;
-		position: relative;
-		padding: 0;
+#hero {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	position: relative;
+	padding: 0;
 
-		.background {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: no-repeat center 0;
-			background-size: cover;
-			filter: grayscale(100%);
+	.background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: no-repeat center 0;
+		background-size: cover;
+	  transform: translateZ(-1px) scale(2);
+		filter: grayscale(100%);
+		z-index: -1;
+	}
+
+	header {
+		position: absolute;
+		display: table-cell;
+		width: 100vw;
+		top: 50%;
+		transform: translateY(-50%);
+		vertical-align: middle;
+		text-align: center;
+
+		h1 {
+			font-family: $cursive;
+			color: $slate;
+			font-size: 3em;
+			font-weight: $regular;
+			margin: 0;
 		}
 
-		header {
-			position: relative;
-			display: table-cell;
-			width: 100%;
-			height: 100%;
-			vertical-align: middle;
-			text-align: center;
+		h2 {
+			font-family: $sans;
+			font-weight: $light;
+			font-size: 1.15em;
+			line-height: 2em;
+			margin: 0;
 
-			h1 {
-				font-family: $cursive;
-				color: $slate;
-				font-size: 3em;
-				font-weight: $regular;
-				margin: 0;
+			strong {
+				display: block;
+				font-weight: $semibold;
+				font-size: 1.3em;
 			}
+		}
 
-			h2 {
-				font-family: $sans;
-				font-weight: $light;
-				font-size: 1.15em;
-				line-height: 2em;
-				margin: 0;
-
-				strong {
-					display: block;
-					font-weight: $semibold;
-					font-size: 1.3em;
-				}
-			}
-
-			a.button {
-				margin-top: 2em;
-			}
+		a.button {
+			margin-top: 2em;
 		}
 	}
+}
