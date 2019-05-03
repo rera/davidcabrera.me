@@ -1,14 +1,14 @@
 import React from "react"
 
+import Layout from "../components/layout"
 import Hero from "../components/hero"
 import About from "../components/about"
 import Teaser from "../components/teaser"
 import Social from "../components/social"
 import Contact from "../components/contact"
-import Footer from "../components/footer"
 
 export default () =>
-	<main>
+	<Layout>
 	  <Hero
 			name="David Cabrera"
 			title="Full Stack Developer"
@@ -30,5 +30,4 @@ export default () =>
 			<Social platform="Instagram" linkText="@FullStackDave" link="http://instagram.com/FullStackDave" />
 		</section>
 		<Contact header="Get in touch" submitText="Send" />
-		<Footer company="Rera Inc." />
-	</main>
+	</Layout>
