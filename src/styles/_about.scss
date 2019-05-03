@@ -1,0 +1,23 @@
+
+#about {
+	margin: 3em auto;
+	max-width: 80%;
+	display: flex;
+
+	figure {
+		flex: 0 0 auto;
+		filter: grayscale(100%);
+
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	p {
+		font-family: $body;
+		font-size: 1.5em;
+		font-weight: $light;
+		line-height: 1.3em;
+		color: $stone;
+	}
+}
