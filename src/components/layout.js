@@ -8,11 +8,9 @@ import "../styles/main.scss"
 class Layout extends React.Component {
   render() {
     return (
-			<div>
+			<div id="page">
 				<Header brand="David Cabrera" />
-				<main>
-					{this.props.children}
-				</main>
+				{this.props.children}
 				<Footer company="Rera Inc." />
 			</div>
 		)
