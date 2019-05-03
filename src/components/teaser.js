@@ -4,7 +4,7 @@ class Teaser extends React.Component {
   render() {
     return (
 			<section class="teaser">
-				<header>{this.props.title}</header>
+				<header>{this.props.header}</header>
 				<a href={this.props.link}>{this.props.linkText}</a>
 			</section>
 		)

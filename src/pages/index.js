@@ -4,6 +4,8 @@ import Hero from "../components/hero"
 import About from "../components/about"
 import Teaser from "../components/teaser"
 import Social from "../components/social"
+import Contact from "../components/contact"
+import Footer from "../components/footer"
 
 export default () =>
 	<main>
@@ -20,11 +22,13 @@ export default () =>
 			imageAlt="David Cabrera - Full Stack Developer"
 			bio="Creative full-stack developer with a passion for user experience and 15+ years of experience in web and ecommerce for diverse verticals. Dynamic hands-on leader with a skill set that spans all aspects of digital experience, acquisition and engagement with expertise in design, development, and data management. Advocate of agile practices and rapid iterative prototyping."
 		/>
-		<Teaser title="Come on now people let's work together!" link="#contact" linkText="Get in touch" />
+		<Teaser header="Come on now people let's work together!" link="#contact" linkText="Get in touch" />
 		<section id="social">
 			<Social platform="LinkedIn" linkText="/FullStackDave" link="https://www.linkedin.com/in/FullStackDave" />
 			<Social platform="Twitter" linkText="@FullStackDave" link="http://twitter.com/fullstackdave" />
 			<Social platform="Facebook" linkText="/FullStackDave" link="http://facebook.com/FullStackDave" />
 			<Social platform="Instagram" linkText="@FullStackDave" link="http://instagram.com/FullStackDave" />
 		</section>
+		<Contact header="Get in touch" submitText="Send" />
+		<Footer company="Rera Inc." />
 	</main>
