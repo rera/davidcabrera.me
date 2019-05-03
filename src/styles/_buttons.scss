@@ -5,7 +5,7 @@
 	margin: 0;
 	padding: 0;
 	display: inline-block;
-	background: $slate;
+	background-color: $slate;
 	color: $white;
 	font-family: $body;
 	letter-spacing: 2px;
@@ -15,11 +15,24 @@
 	box-shadow: inset 0 0 0 2px transparent;
 
 	&:hover {
-		background: transparent !important;
+		background-color: transparent !important;
 		box-shadow: inset 0 0 0 2px $white;
 	}
 
 	&.green {
-		background: $green;
+		background-color: $green;
+	}
+
+	&.white {
+		background-color: $white;
+		color: $green;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	&.tall {
+		line-height: 3.5em;
 	}
 }

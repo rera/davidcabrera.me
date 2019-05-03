@@ -1,0 +1,19 @@
+
+.teaser {
+	padding: 8vh 22vw;
+	background-color: $green;
+	display: flex;
+
+	header {
+		font-family: $serif;
+		font-style: italic;
+		font-size: 1.1em;
+		line-height: 2.5em;
+		color: $white;
+		flex-grow: 2;
+	}
+
+	.button {
+		flex: 0 0 auto;
+	}
+}
