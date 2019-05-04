@@ -1,15 +1,15 @@
-import React from "react"
+import React from 'react'
 
 class About extends React.Component {
-  render() {
+  render () {
     return (
-			<section id="about">
-				<figure>
-					<img src={this.props.imageSrc} alt={this.props.imageAlt} />
-				</figure>
-				<p>{this.props.bio}</p>
-			</section>
-		)
+      <section id='about'>
+        <figure>
+          <img src={this.props.imageSrc} alt={this.props.imageAlt} />
+        </figure>
+        <p>{this.props.bio}</p>
+      </section>
+    )
   }
 }
 

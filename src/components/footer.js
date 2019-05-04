@@ -1,12 +1,12 @@
-import React from "react"
+import React from 'react'
 
 class Footer extends React.Component {
-  render() {
+  render () {
     return (
-			<footer id="footer">
+      <footer id='footer'>
 				&copy; {(new Date().getFullYear())} {this.props.company}
-			</footer>
-		)
+      </footer>
+    )
   }
 }
 

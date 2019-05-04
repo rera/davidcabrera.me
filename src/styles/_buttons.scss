@@ -1,4 +1,5 @@
 .button {
+	cursor: pointer;
 	font-size: .8em;
 	font-weight: $semibold;
 	line-height: 2.8em;
@@ -13,6 +14,7 @@
 	text-transform: uppercase;
 	border: none;
 	box-shadow: inset 0 0 0 2px transparent;
+  transition: all .5s ease 0s;
 
 	&:hover {
 		background-color: transparent !important;

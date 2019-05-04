@@ -1,12 +1,12 @@
-import React from "react"
+import React from 'react'
 
 class Header extends React.Component {
-  render() {
+  render () {
     return (
-			<header id="header">
-				<a href="/" class="brand">{this.props.brand}</a>
-			</header>
-		)
+      <header id='header'>
+        <a href='/' className='brand'>{this.props.brand}</a>
+      </header>
+    )
   }
 }
 

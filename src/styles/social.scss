@@ -17,6 +17,7 @@
 			line-height: 80px;
 			margin-right: .8em;
 			position: relative;
+		  transition: all .5s ease 0s;
 
 			&:hover {
 				background: $stone;

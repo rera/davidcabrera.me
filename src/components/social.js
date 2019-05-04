@@ -1,16 +1,16 @@
-import React from "react"
+import React from 'react'
 
 class Social extends React.Component {
-  render() {
+  render () {
     return (
-			<article class="social-link">
-				<aside className={this.props.platform.toString().toLowerCase()}></aside>
+      <article className='social-link'>
+        <aside className={this.props.platform.toString().toLowerCase()} />
         <div>
           <header>{this.props.platform.toString().toUpperCase()}</header>
-  				<a href={this.props.link}>{this.props.linkText}</a>
+          <a href={this.props.link}>{this.props.linkText}</a>
         </div>
-			</article>
-		)
+      </article>
+    )
   }
 }
 

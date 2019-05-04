@@ -1,19 +1,19 @@
-import React from "react"
+import React from 'react'
 
-import Footer from "./footer"
-import Header from "./header"
+import Footer from './footer'
+import Header from './header'
 
-import "../styles/main.scss"
+import '../styles/main.scss'
 
 class Layout extends React.Component {
-  render() {
+  render () {
     return (
-			<div id="page">
-				<Header brand="David Cabrera" />
-				{this.props.children}
-				<Footer company="Rera Inc." />
-			</div>
-		)
+      <div id='page'>
+        <Header brand='David Cabrera' />
+        {this.props.children}
+        <Footer company='Rera Inc.' />
+      </div>
+    )
   }
 }
 

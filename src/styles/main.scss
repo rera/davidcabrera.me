@@ -1,5 +1,6 @@
 @import "variables";
 @import "buttons";
+@import "animate";
 
 @import "hero";
 @import "about";
@@ -31,6 +32,11 @@ body {
 		a {
 			color: $green;
 			text-decoration: none;
+
+			&:hover {
+				color: $stone;
+			  transition: color .5s ease 0s;
+			}
 		}
 	}
 

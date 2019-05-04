@@ -1,0 +1,26 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.animate {
+	animation-delay: .3s;
+	animation-fill-mode: both;
+	animation-duration: 1.5s;
+
+	&.fade-in {
+		animation-name: fade-in;
+	}
+	&.fade-out {
+		animation-name: fade-out;
+	}
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-out {
+  100% { opacity: 1; }
+  0% { opacity: 0; }
+}
