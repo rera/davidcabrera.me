@@ -21,9 +21,9 @@ class Layout extends React.Component {
   render () {
     return (
       <div id='page' onScroll={this.handleScroll}>
-        <Header brand='David Cabrera' />
+        <Header />
         {this.props.children}
-        <Footer company='Rera Inc.' />
+        <Footer />
 				<button id="btt" className="button far fa-angle-up" onClick={ () => navigate('#hero')}></button>
       </div>
     )

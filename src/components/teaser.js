@@ -6,7 +6,7 @@ class Teaser extends React.Component {
     return (
       <section className='teaser'>
         <header>{this.props.header}</header>
-        <button className="button white tall" onClick={ () => navigate(this.props.link)}>{this.props.linkText}</button>
+        <button className='button white tall' onClick={() => navigate(this.props.link)}>{this.props.linkText}</button>
       </section>
     )
   }
