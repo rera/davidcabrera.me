@@ -2,6 +2,7 @@
 @import "buttons";
 @import "animate";
 
+@import "header";
 @import "hero";
 @import "about";
 @import "teaser";
@@ -9,39 +10,41 @@
 @import "contact";
 @import "footer";
 
-html, body, #___gatsby, div[role="group"], #page {
-	width: 100vw;
-	height: 100vh;
-	overflow-x: hidden;
-}
+html {
+	scroll-behavior: smooth;
+	overflow-y: scroll;
 
-body {
-	margin: 0;
-	background-color: $slate;
-	color: $chalk;
-	font-family: $body;
-
-	#header {
-		display: none;
+	body, #___gatsby, div[role="group"], #page {
+		width: 100vw;
+		height: 100vh;
+		overflow-x: hidden;
 	}
 
-	main {
-		display: block;
-		min-height: 100%;
+	body {
+		margin: 0;
+		background-color: $slate;
+		color: $chalk;
+		font-family: $body;
 
-		a {
-			color: $green;
-			text-decoration: none;
+		main {
+			display: block;
+			min-height: 100vh;
 
-			&:hover {
-				color: $stone;
-			  transition: color .5s ease 0s;
+			a {
+				color: $green;
+				text-decoration: none;
+
+				&:hover {
+					color: $stone;
+				  transition: color .5s ease 0s;
+				}
 			}
+		}
+
+		::selection {
+			background: $green;
+			color: $white;
 		}
 	}
 
-	::selection {
-		background: $green;
-		color: $white;
-	}
 }

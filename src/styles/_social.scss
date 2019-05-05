@@ -1,5 +1,5 @@
 #social {
-	padding: 15vh 15vw;
+	padding: 15vh 10vw;
 	display: flex;
 	background: $slate;
 
@@ -7,6 +7,11 @@
 		flex: 4;
 		display: flex;
 		padding: 5px;
+
+		&>div {
+			margin: auto;
+			display: flex;
+		}
 
 		aside {
 			display: inline-block;
