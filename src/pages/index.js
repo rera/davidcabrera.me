@@ -8,6 +8,9 @@ import Teaser from '../components/teaser'
 import Social from '../components/social'
 import Contact from '../components/contact'
 
+import heroBackground from '../../static/hero-background.jpg'
+import aboutPhoto from '../../static/about-photo.jpg'
+
 export default () => (
   <StaticQuery
     query={graphql`
@@ -17,7 +20,6 @@ export default () => (
             name
 						title
 						location
-						photo
 						bio
 						social {
 							platform
@@ -36,11 +38,11 @@ export default () => (
           location={data.site.siteMetadata.location}
           link='#about'
           linkText='More About Me'
-          backgroundImage='http://davidcabrera.me/wp-content/uploads/2014/07/media5.jpg'
+          backgroundImage={heroBackground}
 		    />
         <main>
           <About
-            imageSrc={data.site.siteMetadata.photo}
+            imageSrc={aboutPhoto}
             imageAlt={data.site.siteMetadata.name + ' - ' + data.site.siteMetadata.title}
             bio={data.site.siteMetadata.bio}
 		      />
