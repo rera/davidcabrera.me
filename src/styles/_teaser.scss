@@ -14,5 +14,17 @@
 
 	.button {
 		flex: 0 0 auto;
+
+		@include sm {
+			margin-top: 1em;
+		}
+	}
+
+	@include md {
+		padding: 5vh 5vw;
+	}
+	@include sm {
+		display: block;
+		text-align: center;
 	}
 }

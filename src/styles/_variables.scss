@@ -23,3 +23,24 @@ $light: 300;
 $regular: 400;
 $semibold: 600;
 $bold: 700;
+
+//mobile
+$screen-desktop-min: 1180px;
+$screen-tablet-min: 980px;
+$screen-phone-min: 680px;
+
+@mixin lg {
+   @media (max-width: #{$screen-desktop-min}) {
+       @content;
+   }
+}
+@mixin md {
+   @media (max-width: #{$screen-tablet-min}) {
+       @content;
+   }
+}
+@mixin sm {
+   @media (max-width: #{$screen-phone-min}) {
+       @content;
+   }
+}

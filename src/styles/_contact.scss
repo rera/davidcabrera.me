@@ -2,6 +2,10 @@
 	border-top: solid 1px transparentize($black, 0.8);
 	padding: 10vh 15vw;
 
+	@include sm {
+		padding: 10vh 5vw;
+	}
+
 	header {
 		text-align: center;
 		font-size: 1.2em;
@@ -26,6 +30,11 @@
 			padding-bottom: 1em;
 			width: 50%;
 			display: inline-block;
+
+			@include sm {
+				width: 100% !important;
+				padding-right: 0 !important;
+			}
 
 			&:nth-of-type(odd) {
 				padding-right: .5em;
@@ -80,6 +89,10 @@
 		input[type="submit"] {
 			width: 70%;
 			margin: auto;
+
+			@include sm {
+				width: 100%;
+			}
 		}
 	}
 }

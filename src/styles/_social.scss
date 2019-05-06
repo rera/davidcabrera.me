@@ -1,12 +1,28 @@
 #social {
+	background: $slate;
 	padding: 15vh 10vw;
 	display: flex;
-	background: $slate;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+
+	@include sm {
+		padding-bottom: 5vh;
+	}
 
 	article {
-		flex: 4;
+		flex: 1;
 		display: flex;
 		padding: 5px;
+
+		@include lg {
+			flex-basis: 33%;
+			margin-bottom: 2em;
+		}
+		@include sm {
+			flex-basis: 100%;
+		}
 
 		&>div {
 			margin: auto;

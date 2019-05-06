@@ -3,12 +3,23 @@
 	display: flex;
 	background: $slate;
 
+	@include md {
+		padding: 10vh 5vw;
+	}
+	@include sm {
+		display: block;
+	}
+
 	figure {
 		flex: 0 0 auto;
 		filter: grayscale(100%);
 
 		img {
 			border-radius: 50%;
+		}
+		@include sm {
+			text-align: center;
+			margin-bottom: 2em;
 		}
 	}
 
@@ -17,5 +28,10 @@
 		font-weight: $light;
 		line-height: 1.3em;
 		color: $stone;
+
+		@include md {
+			font-size: 1.2em;
+			line-height: 1.5em;
+		}
 	}
 }
