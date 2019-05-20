@@ -19,9 +19,9 @@ module.exports = {
         handle: '/FullStackDave',
         link: 'https://www.linkedin.com/in/FullStackDave' },
       {
-        platform: 'Twitter',
-        handle: '@FullStackDave',
-        link: 'http://twitter.com/fullstackdave' },
+        platform: 'Github',
+        handle: '@rera',
+        link: 'https://github.com/rera' },
       {
         platform: 'Facebook',
         handle: '/FullStackDave',
