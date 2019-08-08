@@ -20,7 +20,7 @@ module.exports = {
         link: 'https://www.linkedin.com/in/FullStackDave' },
       {
         platform: 'Github',
-        handle: '@rera',
+        handle: '@FullStackDave',
         link: 'https://github.com/rera' },
       {
         platform: 'Facebook',
