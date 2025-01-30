@@ -16,20 +16,12 @@ module.exports = {
     social: [
       {
         platform: 'LinkedIn',
-        handle: '/FullStackDave',
-        link: 'https://www.linkedin.com/in/FullStackDave' },
+        handle: '/reefactor',
+        link: 'https://www.linkedin.com/in/reefactor' },
       {
         platform: 'Github',
         handle: '@FullStackDave',
-        link: 'https://github.com/rera' },
-      {
-        platform: 'Facebook',
-        handle: '/FullStackDave',
-        link: 'http://facebook.com/FullStackDave' },
-      {
-        platform: 'Instagram',
-        handle: '@FullStackDave',
-        link: 'http://instagram.com/FullStackDave' }
+        link: 'https://github.com/rera' }
     ]
   }
 }
